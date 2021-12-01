@@ -9,8 +9,8 @@
 /// assert_eq!(increases, 7);
 /// ```
 pub fn measure_depth_increase(measurements: Vec<i32>) -> i32 {
-    let mut increase_count: i32 = -1;
-    let mut last_number: i32 = -1;
+    let mut increase_count = -1;
+    let mut last_number = -1;
 
     for measurement in measurements {
         if measurement > last_number {
@@ -34,7 +34,7 @@ pub fn measure_depth_increase(measurements: Vec<i32>) -> i32 {
 /// assert_eq!(increases, 5);
 /// ```
 pub fn measure_depth_increase_sliding(measurements: Vec<i32>) -> i32 {
-    let mut increase_count: i32 = -1;
+    let mut increase_count = -1;
     let mut window: Vec<i32> = Vec::new();
     let mut last_window_sum = 0;
 
