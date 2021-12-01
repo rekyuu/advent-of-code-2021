@@ -6,7 +6,8 @@ use std::fs;
 /// # Examples
 ///
 /// ```
-/// let file = utility::read_from_resource("test.txt");
+/// let file = read_from_resource("test.txt");
+///
 /// assert_eq!(file, "1\n2\n3");
 /// ```
 pub fn read_from_resource(filename: &str) -> String {
@@ -23,7 +24,8 @@ pub fn read_from_resource(filename: &str) -> String {
 ///
 /// ```
 /// let data = String::from("1\n2\n3");
-/// let result = utility::file_lines_to_numbers(data);
+/// let result = file_lines_to_numbers(data);
+///
 /// assert_eq!(result, vec![1, 2, 3]);
 /// ```
 pub fn file_lines_to_numbers(input: String) -> Vec<i32> {
