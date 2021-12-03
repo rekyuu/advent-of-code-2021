@@ -4,9 +4,8 @@
 ///
 /// ```
 /// let measurements = vec![199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-/// let result = measure_depth_increase(measurements);
 ///
-/// assert_eq!(result, 7);
+/// assert_eq!(measure_depth_increase(measurements), 7);
 /// ```
 pub fn measure_depth_increase(measurements: Vec<i32>) -> i32 {
     let mut increase_count = -1;
@@ -29,9 +28,8 @@ pub fn measure_depth_increase(measurements: Vec<i32>) -> i32 {
 ///
 /// ```
 /// let measurements = vec![199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-/// let result = measure_depth_increase_sliding(measurements);
 ///
-/// assert_eq!(result, 5);
+/// assert_eq!(measure_depth_increase_sliding(measurements), 5);
 /// ```
 pub fn measure_depth_increase_sliding(measurements: Vec<i32>) -> i32 {
     let mut increase_count = -1;
@@ -66,16 +64,14 @@ mod tests {
     #[test]
     fn test_measure_depth_increase() {
         let measurements = vec![199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-        let result = measure_depth_increase(measurements);
 
-        assert_eq!(result, 7);
+        assert_eq!(measure_depth_increase(measurements), 7);
     }
 
     #[test]
     fn test_measure_depth_increase_sliding() {
         let measurements = vec![199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
-        let result = measure_depth_increase_sliding(measurements);
 
-        assert_eq!(result, 5);
+        assert_eq!(measure_depth_increase_sliding(measurements), 5);
     }
 }

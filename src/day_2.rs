@@ -8,9 +8,8 @@
 ///     .iter()
 ///     .map(|&s| s.into())
 ///     .collect();
-/// let result = measure_position(measurements);
 ///
-/// assert_eq!(result, 150);
+/// assert_eq!(measure_position(measurements), 150);
 /// ```
 pub fn measure_position(measurements: Vec<String>) -> i32 {
     let mut horizontal_pos = 0;
@@ -45,9 +44,8 @@ pub fn measure_position(measurements: Vec<String>) -> i32 {
 ///     .iter()
 ///     .map(|&s| s.into())
 ///     .collect();
-/// let result = measure_position_with_aim(measurements);
 ///
-/// assert_eq!(result, 900);
+/// assert_eq!(measure_position_with_aim(measurements), 900);
 /// ```
 pub fn measure_position_with_aim(measurements: Vec<String>) -> i32 {
     let mut horizontal_pos = 0;
@@ -83,9 +81,8 @@ mod tests {
             .iter()
             .map(|&s| s.into())
             .collect();
-        let result = measure_position(measurements);
 
-        assert_eq!(result, 150);
+        assert_eq!(measure_position(measurements), 150);
     }
 
     #[test]
@@ -94,8 +91,7 @@ mod tests {
             .iter()
             .map(|&s| s.into())
             .collect();
-        let result = measure_position_with_aim(measurements);
 
-        assert_eq!(result, 900);
+        assert_eq!(measure_position_with_aim(measurements), 900);
     }
 }
